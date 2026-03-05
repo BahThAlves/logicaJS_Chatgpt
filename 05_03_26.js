@@ -68,3 +68,14 @@ function palindromo(string) {
 
 return string === reverse
 }
+
+function removerDuplicados(arr) {
+    let semDup = [arr[0]]
+    for(let i = 1; i < arr.length; i++) {
+        if(!semDup.includes(arr[i])) {
+            semDup.push(arr[i])
+        }
+    }
+
+return semDup
+}
